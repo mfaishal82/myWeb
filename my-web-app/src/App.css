@@ -1,8 +1,48 @@
-#root {
+/* #root { */
   /* max-width: 1280px; */
-  margin: 0 auto;
+  /* margin: 0 auto; */
   /* padding: 2rem; */
-  text-align: center;
+  /* text-align: center; */
+/* } */
+
+/* @import 'flowbite/dist/flowbite.css'; */
+
+/* @tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components { */
+  /* .btn-primary {
+      @apply py-1.5 px-3 text-center bg-blue-700 rounded-md text-white;
+  } */
+/* } */
+
+body {
+  background-image: url('public/mesh.png');
+  background-size: cover;
+  background-attachment: fixed;
+  font-family: 'Roboto', sans-serif;
+  color: #333;
+  margin: 0;
+  padding: 0;
+}
+
+.green-light {
+  display: block;
+  width: 0.5rem;
+  height: 0.5rem;
+  background-color: rgba(22, 163, 74);
+  border-radius: 50%;
+  box-shadow: 0 0 0.6rem 0.1rem rgba(22, 163, 74, 0.7);
+  transform: scale(0.75);
+  animation-name: beating;
+  animation-duration: 1500ms;
+  animation-fill-mode: forwards;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in;
+  margin-top: 8px;
+  margin-left: 5px;
+  margin-right: 5px;
 }
 
 .logo {
