@@ -1,33 +1,30 @@
-import React from "react";
-// import Navbar from "../components/Navbar";
+import React, { useState, useEffect } from "react";
 import "../src/App.css";
-import { Link } from "react-router-dom";
 
-const HomePage: React.FC = () => {
+const MainScreen: React.FC = () => {
+  const [text, setText] = useState("");
+  const fullText = "Welcome, I'm Faisal, a FullStack Developer";
+  const typingSpeed = 100; // milliseconds per character
+
+  useEffect(() => {
+    let currentIndex = 0;
+    const typingInterval = setInterval(() => {
+      if (currentIndex < fullText.length) {
+        setText(fullText.slice(0, currentIndex + 1));
+        currentIndex++;
+      } else {
+        clearInterval(typingInterval);
+      }
+    }, typingSpeed);
+
+    return () => clearInterval(typingInterval);
+  }, []);
+
   return (
-    // <div className="container">
-    <>
-      <nav className="nav-head" style={{ position: "absolute", top: 0, left: 0, border: "1px solid black", margin: "2%", padding: "5%" }}>
-      <div>About Me</div>
-      <div>Gallery</div>
-      <div>Contact</div>
-      <Link to="/"><div>Main Screen</div></Link>
-      </nav>
-
-      <section style={{ display: "flex", justifyContent: "center", alignItems: "center", height: "100vh", border: "1px solid black" }}>
-      <img src="public/vite.svg" alt="" /> 
-      Ini tampilan utama
-      </section>
-
-      <nav className="nav-bottom" style={{ position: "absolute", bottom: 0, right: 0, border: "1px solid black", margin: "2%", padding: "5%" }}>
-      <div>Link 1</div>
-      <div>Link 2</div>
-      <div>Link 3</div>
-      </nav>
-    </>
-    // </div>
-
+    <div className="flex items-center justify-center h-screen bg-transparent">
+      <h1 className="text-gray-800 typing-text">{text}</h1>
+    </div>
   );
 };
 
-export default HomePage;
+export default MainScreen;

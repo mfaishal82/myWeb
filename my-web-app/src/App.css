@@ -17,14 +17,23 @@
   } */
 /* } */
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
-  background-image: url('public/mesh.png');
+  background-image: url('public/bg.webp');
   background-size: cover;
   background-attachment: fixed;
   font-family: 'Roboto', sans-serif;
   color: #333;
   margin: 0;
   padding: 0;
+}
+
+h1 {
+  font-size: 5px;
+  margin: 0;
 }
 
 .green-light {
@@ -79,4 +88,18 @@ body {
 
 .read-the-docs {
   color: #888;
+}
+
+.typing-text {
+  border-right: 0.15em solid #333;
+  white-space: nowrap;
+  overflow: hidden;
+  animation: blink-caret 0.75s step-end infinite;
+  font-size: 2.5rem; /* Increase font size */
+  font-weight: bold; /* Make the text bold */
+}
+
+@keyframes blink-caret {
+  from, to { border-color: transparent }
+  50% { border-color: #333 }
 }
