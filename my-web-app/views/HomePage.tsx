@@ -3,8 +3,8 @@ import "../src/App.css";
 
 const MainScreen: React.FC = () => {
   const [text, setText] = useState("");
-  const fullText = "I'm Faisal, a FullStack Developer";
-  const typingSpeed = 100; // milliseconds per character
+  const fullText = "I'm a FullStack Developer";
+  const typingSpeed = 100;
 
   useEffect(() => {
     let currentIndex = 0;
@@ -23,7 +23,7 @@ const MainScreen: React.FC = () => {
   return (
     <section className="home-container">
       <div className="home-card">
-        <h1 className="home-heading">WELCOME</h1>
+        {/* <h1 className="home-heading">HELLO</h1> */}
         <div className="typing-container">
           <h2 className="typing-text">{text}</h2>
         </div>

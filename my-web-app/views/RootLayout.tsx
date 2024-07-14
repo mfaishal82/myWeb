@@ -6,43 +6,32 @@ const RootLayout: React.FC = () => {
   return (
     <>
       <div className="nav-head-status">
-          <span className="green-light" />
-          <span
-            style={{ marginLeft: "5px", color: "#2E7D32" }}
-          >
-            open to work
-          </span>
+        <span className="green-light" />
+        <span className="open-to-work-text">
+          open to work
+        </span>
       </div>
 
       <nav className="nav-head">
-        <ul
-          style={{
-            listStyle: "none",
-            padding: 0,
-            margin: 0,
-            display: "flex",
-            flexDirection: "column",
-            gap: "0.5rem",
-          }}
-        >
+        <ul className="flex flex-col gap-2 list-none p-0 m-0">
           <li>
-            <Link to="/about-me" style={linkStyle}>
-              <FaUser style={{ marginRight: '5px' }} /> About Me
+            <Link to="/about-me" style={linkStyle} className="nav-link">
+              <FaUser className="mr-2" /> <span>About Me</span>
             </Link>
           </li>
           <li>
-            <Link to="/gallery" style={linkStyle}>
-              <FaImage style={{ marginRight: '5px' }} /> Gallery
+            <Link to="/gallery" style={linkStyle} className="nav-link">
+              <FaImage className="mr-2" /> <span>Gallery</span>
             </Link>
           </li>
           <li>
-            <Link to="/contact" style={linkStyle}>
-              <FaEnvelope style={{ marginRight: '5px' }} /> Contact
+            <Link to="/contact" style={linkStyle} className="nav-link">
+              <FaEnvelope className="mr-2" /> <span>Contact</span>
             </Link>
           </li>
           <li>
-            <Link to="/" style={linkStyle}>
-              <FaHome style={{ marginRight: '5px' }} /> Main Screen
+            <Link to="/" style={linkStyle} className="nav-link">
+              <FaHome className="mr-2" /> <span>Main Screen</span>
             </Link>
           </li>
         </ul>
@@ -72,8 +61,9 @@ const linkStyle = {
   fontWeight: "bold",
   padding: "0.5rem 1rem",
   borderRadius: "0.25rem",
-  transition: "background-color 0.3s ease",
-  display: "block",
+  transition: "all 0.3s ease",
+  display: "flex",
+  alignItems: "center",
 };
 
 export default RootLayout;
