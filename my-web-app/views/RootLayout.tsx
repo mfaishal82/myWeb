@@ -1,54 +1,20 @@
 import React from "react";
 import { Link, Outlet } from "react-router-dom";
+import { FaUser, FaImage, FaEnvelope, FaHome } from 'react-icons/fa';
 
 const RootLayout: React.FC = () => {
   return (
     <>
-      <div
-        style={{
-          display: "flex",
-          justifyContent: "end",
-          marginRight: "20px",
-          position: "absolute",
-          top: 10,
-          right: 10,
-          zIndex: 1000,
-        }}
-      >
-        <div
-          style={{
-            display: "flex",
-            alignItems: "center",
-            margin: "3px",
-            borderRadius: "1.5rem",
-            border: "1px solid #4CAF50",
-            backgroundColor: "#E8F5E9",
-            padding: "5px 10px",
-            boxShadow: "0 2px 4px rgba(0,0,0,0.1)",
-          }}
-        >
+      <div className="nav-head-status">
           <span className="green-light" />
           <span
-            style={{ marginLeft: "5px", color: "#2E7D32", fontWeight: "bold" }}
+            style={{ marginLeft: "5px", color: "#2E7D32" }}
           >
             open to work
           </span>
-        </div>
       </div>
 
-      <nav
-        className="nav-head"
-        style={{
-          position: "absolute",
-          top: 0,
-          left: 0,
-          margin: "2%",
-          padding: "1rem",
-          backgroundColor: "rgba(255, 255, 255, 0.8)",
-          borderRadius: "0.5rem",
-          boxShadow: "0 2px 4px rgba(0, 0, 0, 0.1)",
-        }}
-      >
+      <nav className="nav-head">
         <ul
           style={{
             listStyle: "none",
@@ -61,22 +27,22 @@ const RootLayout: React.FC = () => {
         >
           <li>
             <Link to="/about-me" style={linkStyle}>
-              About Me
+              <FaUser style={{ marginRight: '5px' }} /> About Me
             </Link>
           </li>
           <li>
             <Link to="/gallery" style={linkStyle}>
-              Gallery
+              <FaImage style={{ marginRight: '5px' }} /> Gallery
             </Link>
           </li>
           <li>
             <Link to="/contact" style={linkStyle}>
-              Contact
+              <FaEnvelope style={{ marginRight: '5px' }} /> Contact
             </Link>
           </li>
           <li>
             <Link to="/" style={linkStyle}>
-              Main Screen
+              <FaHome style={{ marginRight: '5px' }} /> Main Screen
             </Link>
           </li>
         </ul>
@@ -89,6 +55,7 @@ const RootLayout: React.FC = () => {
           alignItems: "center",
           height: "100vh",
           border: "1px solid black",
+          borderRadius: "0.25rem",
         }}
       >
         {/* <img src="public/vite.svg" alt="" /> 
