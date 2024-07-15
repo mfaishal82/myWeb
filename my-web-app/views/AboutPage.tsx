@@ -1,5 +1,5 @@
 import React from "react";
-// import { FaEnvelope, FaLinkedin, FaGithub } from 'react-icons/fa';
+import { FaHeart, FaCode, FaGraduationCap } from 'react-icons/fa';
 import '../src/App.css';
 
 const AboutPage: React.FC = () => {
@@ -8,17 +8,13 @@ const AboutPage: React.FC = () => {
       <div className="about-card">
         <h1 className="about-heading">ABOUT ME</h1>
         <p className="about-intro">
-          Hello! I'm <span className="highlight">Muhammad Faisal</span>, a <span className="highlight">Fullstack Developer</span> from Depok, Indonesia. My journey into software development began out of sheer curiosity, and I quickly realized that this is my true calling. The process of learning new technologies has not only equipped me with technical skills but also fostered a <span className="highlight">growth mindset</span> that I cherish.
+          Hello! I'm <span className="highlight">Muhammad Faisal</span>, a <span className="highlight">Fullstack Developer</span>. My journey into software development began out of sheer curiosity, and I quickly realized that this is my true calling. The process of learning new technologies has not only equipped me with technical skills but also fostered a <span className="highlight">growth mindset</span> that I cherish.
         </p>
-        
-        {/* <div className="contact-links">
-          <a href="mailto:mf.ihbs@gmail.com"><FaEnvelope /> Email</a>
-          <a href="https://www.linkedin.com/in/mfaishal82/" target="_blank" rel="noopener noreferrer"><FaLinkedin /> LinkedIn</a>
-          <a href="https://github.com/mfaishal82" target="_blank" rel="noopener noreferrer"><FaGithub /> GitHub</a>
-        </div> */}
 
         <div className="section">
-          <h3>Key Skills</h3>
+          <h3>
+            <FaCode className="inline-block mr-2 text-blue-500" /> Key Skills
+          </h3>
           <ul className="skills-list">
             <li>JavaScript & TypeScript</li>
             <li>React & Next.js</li>
@@ -30,7 +26,9 @@ const AboutPage: React.FC = () => {
         </div>
 
         <div className="section">
-          <h3>Education</h3>
+          <h3>
+            <FaGraduationCap className="inline-block mr-2 text-green-500" /> Education
+          </h3>
           <ul>
             <li>
               <div className="education-item">
@@ -50,7 +48,9 @@ const AboutPage: React.FC = () => {
         </div>
 
         <div className="section">
-          <h3>Interests</h3>
+          <h3>
+            <FaHeart className="inline-block mr-2 text-red-500" /> Interests
+          </h3>
           <p>
             When not coding, I enjoy exploring new technologies, contributing to open-source projects, and blending my background in education with innovative tech solutions.
           </p>

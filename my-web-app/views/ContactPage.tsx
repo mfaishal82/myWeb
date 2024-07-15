@@ -16,11 +16,11 @@ const ContactPage: React.FC = () => {
           </li>
           <li className="flex items-center hover:bg-gray-100 p-3 rounded-lg transition-colors duration-300">
             <FaLinkedin className="text-blue-700 mr-4 text-2xl" />
-            <a href="https://www.linkedin.com/in/mfaishal82/" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:text-blue-800 transition-colors duration-300 text-lg"> @mfaishal82</a>
+            <a href="https://www.linkedin.com/in/mfaishal82/" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:text-blue-800 transition-colors duration-300 text-lg"> Muhammad Faisal </a>
           </li>
           <li className="flex items-center hover:bg-gray-100 p-3 rounded-lg transition-colors duration-300">
             <FaGithub className="text-gray-800 mr-4 text-2xl" />
-            <a href="https://github.com/mfaishal82" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:text-blue-800 transition-colors duration-300 text-lg"> Muhammad Faisal</a>
+            <a href="https://github.com/mfaishal82" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:text-blue-800 transition-colors duration-300 text-lg"> @mfaishal82</a>
           </li>
         </ul>
       </div>
