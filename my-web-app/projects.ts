@@ -1,13 +1,5 @@
 const projects = [
     {
-        title: "Tasmi' App",
-        description: "A simple mobile app for listening Qur'an recitation and prayer time schedule",
-        url: "https://github.com/mfaishal82/murattal-quran",
-        date: "July 2024",
-        image: ["/Tasmi'.png"],
-        techStack: "React-Native, Expo, Expo location, Axios, Mp3Quran API, Aladhan API"
-    },
-    {
         title: "Mini Project",
         description: "Mini Coding Live Project Assignment. A simple web-based project with responsive design",
         url: "https://github.com/revou-fundamental-course/27-may-24-mfaishal82",
@@ -16,12 +8,20 @@ const projects = [
         techStack: "Semantic HTML, CSS, JavaScript"
     },
     {
+        title: "Tasmi' App",
+        description: "A simple mobile app for listening Qur'an recitation and prayer time schedule",
+        url: "https://github.com/mfaishal82/murattal-quran",
+        date: "July 2024",
+        image: ["/Tasmi'.png"],
+        techStack: "React-Native, Expo, Expo location, Axios, Mp3Quran API, Aladhan API"
+    },
+    {
         title: "MediChat Rx",
         description:
             "This is a chat-based AI mobile app where users can share health issues and receive real-time advice. It offers information on medications, including nearby pharmacies, hospital, etc",
         url: "https://github.com/Medichat-Rx/frontend",
         date: "April 2024",
-        image: ["/MediChat.png"],
+        image: ["/MediChat 1.png", "/MediChat 2.png"],
         techStack: "GraphQL, MongoDB, Node.js, React Native, Expo, Expo Location, Expo Map, HercAI API, Google Place API"
     },
     {

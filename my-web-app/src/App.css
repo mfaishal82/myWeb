@@ -43,6 +43,16 @@ h1 {
   }
 }
 
+.red-light {
+  display: inline-block;
+  width: 12px;
+  height: 12px;
+  background-color: #C62828;
+  border-radius: 50%;
+  box-shadow: 0 0 8px #C62828;
+  animation: pulse 2s infinite;
+}
+
 .logo {
   height: 6em;
   padding: 1.5em;
