@@ -1,5 +1,5 @@
 import React from "react";
-import { FaHeart, FaCode, FaGraduationCap } from 'react-icons/fa';
+import { FaHeart, FaCode, FaGraduationCap, FaBriefcase } from 'react-icons/fa';
 import '../src/App.css';
 
 const AboutPage: React.FC = () => {
@@ -42,6 +42,26 @@ const AboutPage: React.FC = () => {
                 <div className="school">Institut Agama Islam Persis</div>
                 <div className="program">Bachelor of Education</div>
                 <div className="date">2019 – 2023 | GPA: 3.71/4.00</div>
+              </div>
+            </li>
+          </ul>
+        </div>
+
+        <div className="section">
+          <h3>
+            <FaBriefcase className="inline-block mr-2 text-yellow-500" /> Experience
+          </h3>
+          <ul>
+            <li>
+              <div className="education-item">
+                <div className="school">Eduwork</div>
+                <div className="program">Programmer (Intern)</div>
+                <div className="date">July 2024 – Present</div>
+                <div className="description">
+                  Currently working as a Frontend Developer, specializing in React and JavaScript. 
+                  Developing responsive and interactive web applications while also gaining exposure to PHP. 
+                  Collaborating with cross-functional teams to deliver high-quality software solutions.
+                </div>
               </div>
             </li>
           </ul>

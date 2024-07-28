@@ -736,7 +736,8 @@ h3 {
   background: linear-gradient(90deg, #ff6b6b, #feca57);
   -webkit-background-clip: text;
   background-clip: text;
-  color: transparent;
+  color: #333; /* Ubah warna teks menjadi gelap saat dihover */
+  text-shadow: 0 0 1px rgba(255,255,255,0.5); /* Tambahkan bayangan teks untuk meningkatkan keterbacaan */
 }
 
 .about-card li {
@@ -766,7 +767,8 @@ h3 {
   background: linear-gradient(90deg, #ff6b6b, #feca57);
   -webkit-background-clip: text;
   background-clip: text;
-  color: transparent;
+  color: #333; /* Ubah warna teks menjadi gelap saat dihover */
+  text-shadow: 0 0 1px rgba(255,255,255,0.5); /* Tambahkan bayangan teks */
   transform: translateX(5px);
 }
 
