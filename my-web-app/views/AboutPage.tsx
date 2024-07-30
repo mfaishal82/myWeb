@@ -58,7 +58,7 @@ const AboutPage: React.FC = () => {
                 <div className="program">Programmer (Intern)</div>
                 <div className="date">July 2024 – Present</div>
                 <div className="description">
-                  Currently working as a Frontend Developer, specializing in React and JavaScript. 
+                  Currently working as a Frontend Developer, specializing in React and TypeScript. 
                   Developing responsive and interactive web applications while also gaining exposure to PHP. 
                   Collaborating with cross-functional teams to deliver high-quality software solutions.
                 </div>
