@@ -1,8 +1,13 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import { FaUser, FaImage, FaEnvelope, FaHome } from 'react-icons/fa';
+import { FaUser, FaImage, FaEnvelope, FaHome, FaMoon, FaSun } from 'react-icons/fa';
 
-const Navigation: React.FC = () => {
+interface NavigationProps {
+  isDarkMode: boolean;
+  toggleDarkMode: () => void;
+}
+
+const Navigation: React.FC<NavigationProps> = ({ isDarkMode, toggleDarkMode }) => {
   return (
     <nav className="nav-head">
       <ul className="flex flex-col gap-2 list-none p-0 m-0">
@@ -26,6 +31,12 @@ const Navigation: React.FC = () => {
             <FaHome className="mr-2" /> <span>Main Screen</span>
           </Link>
         </li>
+        <li>
+          <button onClick={toggleDarkMode} style={linkStyle} className="nav-link">
+            {isDarkMode ? <FaSun className="mr-2" /> : <FaMoon className="mr-2" />}
+            <span>{isDarkMode ? "Light Mode" : "Dark Mode"}</span>
+          </button>
+        </li>
       </ul>
     </nav>
   );
@@ -33,7 +44,7 @@ const Navigation: React.FC = () => {
 
 const linkStyle = {
   textDecoration: "none",
-  color: "#333",
+  color: "inherit",
   fontWeight: "bold",
   padding: "0.5rem 1rem",
   borderRadius: "0.25rem",

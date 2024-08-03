@@ -832,3 +832,147 @@ h3 {
   -ms-overflow-style: none;  /* IE dan Edge */
   scrollbar-width: none;  /* Firefox */
 }
+
+/* Dark Mode Styles */
+.dark {
+  background-color: #1a1a1a;
+  color: #e0e0e0;
+}
+
+.dark .about-card,
+.dark .contact-card,
+.dark .home-card {
+  background-color: #2a2a2a;
+  color: #e0e0e0;
+}
+
+.dark .nav-head,
+.dark .nav-bottom {
+  background-color: rgba(42, 42, 42, 0.8);
+}
+
+.dark .nav-bottom-link {
+  color: #e0e0e0;
+}
+
+.dark .nav-bottom-link:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+  color: #ffffff;
+}
+
+.dark .about-card li:hover,
+.dark .contact-card li:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+  color: #ffffff;
+}
+
+.dark .skills-list li {
+  background-color: #3a3a3a;
+  color: #e0e0e0;
+}
+
+.dark .skills-list li:hover {
+  background-color: #4a4a4a;
+  color: #ffffff;
+}
+
+.dark .education-item {
+  background-color: #3a3a3a;
+}
+
+.dark .education-item:hover {
+  background-color: #4a4a4a;
+}
+
+.dark .school {
+  color: #e0e0e0;
+}
+
+.dark .program {
+  color: #b0b0b0;
+}
+
+.dark .date {
+  color: #909090;
+}
+
+.dark .cta-button {
+  background: linear-gradient(45deg, #3a3a3a, #4a4a4a);
+  color: #e0e0e0;
+}
+
+.dark .cta-button:hover {
+  background: linear-gradient(45deg, #4a4a4a, #5a5a5a);
+}
+
+.dark .nav-head {
+  background-color: rgba(42, 42, 42, 0.9);
+}
+
+.dark .nav-link {
+  color: #e0e0e0;
+}
+
+.dark .nav-link:hover {
+  background: linear-gradient(90deg, #ff6b6b, #feca57);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  text-shadow: none;
+}
+
+.dark .nav-link::after {
+  background: linear-gradient(90deg, #ff6b6b, #feca57);
+}
+
+.dark .nav-link:hover span {
+  color: #ffffff;
+}
+
+.dark p:not(h1 *, span) {
+  color: #00ffff; /* Cyan */
+}
+
+.dark .section p {
+  color: #ff69b4; /* Hot Pink */
+}
+
+.dark .skills-list li {
+  color: #ffa500; /* Orange */
+  background-color: #3a3a3a;
+}
+
+.dark .education-item {
+  background-color: #3a3a3a;
+}
+
+.dark .school {
+  color: #98fb98; /* Pale Green */
+}
+
+.dark .program {
+  color: #dda0dd; /* Plum */
+}
+
+.dark .date {
+  color: #87cefa; /* Light Sky Blue */
+}
+
+.dark .nav-link {
+  color: #f0e68c; /* Khaki */
+}
+
+.dark .nav-link:hover {
+  color: #ff6347; /* Tomato */
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.dark .cta-button {
+  background: linear-gradient(45deg, #ff4500, #ffd700);
+  color: #1a1a1a;
+}
+
+.dark .cta-button:hover {
+  background: linear-gradient(45deg, #ff6347, #ffa500);
+}
