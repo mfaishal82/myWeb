@@ -17,7 +17,7 @@ const ProjectCard: React.FC<ProjectCardProps> = ({ project }) => (
   <div className="card bg-base-100 shadow-xl m-4" style={{maxHeight: "590px", overflowY: "auto"}}>
     <figure>
       {project.image && project.image.length > 0 && (
-        <Carousel autoPlay showThumbs={false} infiniteLoop={true} showStatus={true} showIndicators={false} interval={1500} showArrows={true} >
+        <Carousel autoPlay showThumbs={false} infiniteLoop={true} showStatus={true} showIndicators={false} interval={3000} showArrows={true} >
           {project.image.map((img: string, index: number) => (
             <div key={index}>
               <img style={{ padding: 80 }} src={img} alt={`${project.title} - ${index + 1}`} />

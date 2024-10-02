@@ -1,7 +1,10 @@
 import "daisyui"; // Add missing import statement
 /** @type {import('tailwindcss').Config} */
 export default {
-  content: ["*.{html,js,ts,jsx,tsx}, node_modules/flowbite-react/lib/esm/**/*.js"],
+  content: [
+    "./index.html",
+    "./src/**/*.{js,ts,jsx,tsx}",
+  ],
   theme: {
     extend: {},
   },

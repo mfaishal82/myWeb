@@ -1,5 +1,5 @@
 import ReactDOM from 'react-dom/client'
-// import './index.css'
+import './index.css'
 // import HomePage from '../views/HomePage.tsx'
 // import LandingPage from '../views/LandingPage.tsx'
 import AboutPage from '../views/AboutPage.tsx'

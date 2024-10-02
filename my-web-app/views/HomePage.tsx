@@ -1,32 +1,23 @@
-import React, { useState, useEffect } from "react";
+import React, { useEffect } from "react";
+import TypeIt from "typeit";
 import "../src/App.css";
 
 const MainScreen: React.FC = () => {
-  const [text, setText] = useState("");
-  const fullText = "I'm a FullStack Developer";
-  const typingSpeed = 100;
 
   useEffect(() => {
-    let currentIndex = 0;
-    const typingInterval = setInterval(() => {
-      if (currentIndex < fullText.length) {
-        setText(fullText.slice(0, currentIndex + 1));
-        currentIndex++;
-      } else {
-        clearInterval(typingInterval);
-      }
-    }, typingSpeed);
-
-    return () => clearInterval(typingInterval);
+    new TypeIt("#callback", {
+      strings: ["Hi I'm Full Stack Developer"],
+      afterStep: function (instance: TypeIt) {
+        instance.getElement().style.color = `rgb(${Math.floor(Math.random() * 256)}, ${Math.floor(Math.random() * 256)}, ${Math.floor(Math.random() * 256)})`;
+      },
+    }).go();
   }, []);
 
   return (
     <section className="home-container">
       <div className="home-card">
         {/* <h1 className="home-heading">HELLO</h1> */}
-        <div className="typing-container">
-          <h2 className="typing-text">{text}</h2>
-        </div>
+        <p id="callback" style={{fontSize: "30px", marginBottom: "10px"}}></p>
         <p className="home-intro">
           Passionate about creating innovative web solutions and turning ideas into reality.
           Explore my journey through code and creativity.

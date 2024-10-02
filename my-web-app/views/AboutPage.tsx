@@ -72,7 +72,7 @@ const AboutPage: React.FC = () => {
             <FaHeart className="inline-block mr-2 text-red-500" /> Interests
           </h3>
           <p>
-            When not coding, I enjoy exploring new technologies, contributing to open-source projects, and blending my background in education with innovative tech solutions.
+            When not coding, I enjoy exploring new technologies and blending my background in education with innovative tech solutions.
           </p>
         </div>
       </div>
